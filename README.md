@@ -7,6 +7,8 @@ or use the following environment variables:
  * SENSU_NAME
  * SENSU_HOST
  * SENSU_API_PORT
+ * SENSU_API_USER
+ * SENSU_API_PASSWORD
  * SENSU_SSL - set to 1 or true to use SSL
  * SENSU_INSECURE - set to 1 or true to allow self-signed certs
  * AMQP_VHOST

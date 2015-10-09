@@ -19,6 +19,12 @@ if (typeof(process.env.SENSU_HOST) !== 'undefined') {
 if (typeof(process.env.SENSU_API_PORT) !== 'undefined') {
   configJSON.sensu[0].port = process.env.SENSU_API_PORT;
 }
+if (typeof(process.env.SENSU_API_USER) !== 'undefined') {
+  configJSON.sensu[0].user = process.env.SENSU_API_USER;
+}
+if (typeof(process.env.SENSU_API_PASSWORD) !== 'undefined') {
+  configJSON.sensu[0].pass = process.env.SENSU_API_PASSWORD;
+}
 if (typeof(process.env.SENSU_SSL) !== 'undefined' &&
     (process.env.SENSU_SSL == '1' ||
      process.env.SENSU_SSL.toLowerCase() == "true")) {
