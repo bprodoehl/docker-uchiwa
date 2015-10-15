@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p /config
+
 if [ ! -e /config/config.json ]; then
   cp /opt/config.json.template /config/config.json
 fi
