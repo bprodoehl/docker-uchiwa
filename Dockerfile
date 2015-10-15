@@ -9,5 +9,6 @@ RUN mkdir -p /opt/config-filler
 ADD index.js /opt/config-filler/
 
 ADD start.sh /usr/sbin/
+ADD config.json.template /opt/config.json.template
 
 CMD /usr/sbin/start.sh

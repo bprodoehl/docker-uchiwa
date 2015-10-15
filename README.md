@@ -31,6 +31,6 @@ docker run -d --name uchiwa \
            --env SENSU_TIMEOUT=5 \
            --env UCHIWA_USER=myadminuser \
            --env UCHIWA_PASSWORD=mysecretpassword \
-           --env UCHIWA_PORT=80
+           --env UCHIWA_PORT=80 \
            bprodoehl/uchiwa
 ```
