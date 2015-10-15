@@ -17,7 +17,7 @@ if (typeof(process.env.SENSU_HOST) !== 'undefined') {
   configJSON.sensu[0].host = process.env.SENSU_HOST;
 }
 if (typeof(process.env.SENSU_API_PORT) !== 'undefined') {
-  configJSON.sensu[0].port = process.env.SENSU_API_PORT;
+  configJSON.sensu[0].port = parseInt(process.env.SENSU_API_PORT);
 }
 if (typeof(process.env.SENSU_API_USER) !== 'undefined') {
   configJSON.sensu[0].user = process.env.SENSU_API_USER;
@@ -41,7 +41,7 @@ if (typeof(process.env.AMQP_VHOST) !== 'undefined') {
   configJSON.sensu[0].path = process.env.AMQP_VHOST;
 }
 if (typeof(process.env.SENSU_TIMEOUT) !== 'undefined') {
-  configJSON.sensu[0].timeout = process.env.SENSU_TIMEOUT;
+  configJSON.sensu[0].timeout = parseInt(process.env.SENSU_TIMEOUT);
 }
 
 // Uchiwa configuration keys
@@ -52,7 +52,7 @@ if (typeof(process.env.UCHIWA_PASSWORD) !== 'undefined') {
   configJSON.uchiwa.pass = process.env.UCHIWA_PASSWORD;
 }
 if (typeof(process.env.UCHIWA_PORT) !== 'undefined') {
-  configJSON.uchiwa.port = process.env.UCHIWA_PORT;
+  configJSON.uchiwa.port = parseInt(process.env.UCHIWA_PORT);
 }
 
 console.log(JSON.stringify(configJSON, null, 2));
