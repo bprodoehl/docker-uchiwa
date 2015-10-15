@@ -25,9 +25,9 @@ docker run -d --name uchiwa \
            --env SENSU_NAME="Main Server" \
            --env SENSU_HOST="sensu-server.mydomain.com" \
            --env SENSU_API_PORT=443 \
+           --env SENSU_API_PATH="" \
            --env SENSU_SSL=true \
            --env SENSU_INSECURE=true \
-           --env AMQP_VHOST=\\sensu \
            --env SENSU_TIMEOUT=5 \
            --env UCHIWA_USER=myadminuser \
            --env UCHIWA_PASSWORD=mysecretpassword \

@@ -37,8 +37,8 @@ if (typeof(process.env.SENSU_SSL) !== 'undefined' &&
     configJSON.sensu[0].insecure = true;
   }
 }
-if (typeof(process.env.AMQP_VHOST) !== 'undefined') {
-  configJSON.sensu[0].path = process.env.AMQP_VHOST;
+if (typeof(process.env.SENSU_API_PATH) !== 'undefined') {
+  configJSON.sensu[0].path = process.env.SENSU_API_PATH;
 }
 if (typeof(process.env.SENSU_TIMEOUT) !== 'undefined') {
   configJSON.sensu[0].timeout = parseInt(process.env.SENSU_TIMEOUT);
